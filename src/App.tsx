@@ -6,7 +6,7 @@ function App() {
       <nav className="flex  justify-between md:mx-40 mx-4 md:space-x-100 mt-2 items-center">
         <div className="flex items-center space-x-1">
           <img
-            src="assets/atrium.png"
+            src="/assets/atrium.jpeg"
             alt="lol"
             className="h-12 w-12 mt-2 "
           />
@@ -21,7 +21,7 @@ function App() {
       </nav>
 
       <div className="flex justify-center space-x-5 items-center mt-30 ">
-        <img src="assets/atrium2.png" alt="lol" className="w-40 h-40"></img>
+        <img src="/assets/atrium2.jpeg" alt="lol" className="w-40 h-40"></img>
         <div className="md:text-8xl text-4xl text-[#85ff99] hover:text-green-400">
           Where Developers <br></br>Ship Their Best Work
         </div>
