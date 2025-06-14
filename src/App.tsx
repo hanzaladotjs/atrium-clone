@@ -2,7 +2,8 @@ import "./App.css";
 
 import atriumLogo from "./assets/atrium.jpeg";
 import atrium2 from "./assets/atrium2.png";
-import leftImage from "./assets/atrium3-.png"
+import leftImage from "./assets/atrium3-.png";
+import rightImage from "./assets/atrium4.jpeg"
 
 function App() {
   return (
@@ -10,17 +11,17 @@ function App() {
       <nav className="flex  justify-between md:mx-40 mx-4 md:space-x-100 mt-2 items-center">
         <div className="flex items-center space-x-1">
           <img src={atriumLogo} alt="lol" className="h-12 w-12 mt-2 " />
-          <h1 className="font-proj font-thin text-[#85ff99] text-3xl mt-2 hover:text-green-400">
+          <h1 className="text-[#85ff99] text-3xl mt-2 hover:text-green-400">
             {" "}
             atrium
           </h1>
         </div>
-        <div className="font-proj font-thin text-white hover:underline hover:text-gray-500 mt-3  text-xl">
+        <div className="text-white hover:underline hover:text-gray-500 mt-3  text-xl">
           about-us
         </div>
       </nav>
 
-      <div className="flex justify-center space-x-5 items-center mt-30 ">
+      <div className="flex justify-center md:space-x-20 items-center mt-30 ">
         <img src={atrium2} alt="lol" className="w-43 h-40"></img>
         <div className="md:text-8xl text-4xl text-[#85ff99] hover:text-green-400">
           Where Developers <br></br>Ship Their Best Work
@@ -28,26 +29,34 @@ function App() {
       </div>
 
       <div className="flex flex-col md:flex-row mt-10 justify-center space-y-5 md:space-y-0 md:space-x-5 items-center">
-        <div className="flex flex-col border hover:border-gray-200 pt-5 pl-10 border-gray-500 w-90  md:w-180 h-100 rounded-2xl text-start">
-          <h1 className="text-2xl md:text-3xl mb-2 text-[#85ff99]  ">For</h1>
-          <h1 className="text-3xl md:text-4xl mb-4"> Developers</h1>
-          <button className="w-40 h-20 bg-[#85ff99]  border-2 hover:border-white hover:bg-black text-black hover:text-white font-bold">
-            {" "}
-            start building{" "}
-          </button>
-          <div className="flex justify-between -mt-1">
-            <div className="flex flex-col mt-20">
+        <div className="flex flex-col border hover:border-gray-200 pt-5 pl-10 border-gray-500 w-100  md:w-180 h-100 rounded-2xl text-start">
+          <div className="flex  justify-between items-center" >
+            <div>
+              <h1 className="text-2xl md:text-3xl mb-2 text-[#85ff99]  ">
+                For
+              </h1>
+              <h1 className="text-3xl md:text-4xl"> Developers</h1>
+            </div>
+            <button className="md:w-40 md:h-20 h-15 w-25 mr-5 rounded-lg  md:mr-5 md:rounded-xl text-[#85ff99] border-green-400  border-3 hover:border-white hover:bg-black  hover:text-white font-bold">
+              {" "}
+              start building{" "}
+            </button>
+          </div>
+
+          <div className="flex justify-between mt-10">
+            <div className="flex flex-col">
               <div className="text-gray-400 pl-1 mb-2 ">Programs:</div>
-              <div className="flex space-x-7 mb-2">
-                <h1>🦄️</h1>
-                <div>
+              <div className="flex space-x-6 mb-2">
+                <h1 className="hover:text-2xl text-xl">🦄️</h1>
+                <div >
                   Uniswap Hook <br></br> Incubator
                 </div>
               </div>
               <div className="flex space-x-6">
                 <svg
-                  width="24px"
-                  height="24px"
+className="hover:bg-green-900"
+                  width="30px"
+                  height="30px"
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
                   fill="none"
@@ -73,22 +82,29 @@ function App() {
                     fill="#85ff99"
                   ></path>
                 </svg>
-                <div>more coming <br /> soon</div>
+                <div>
+                  more coming <br /> soon
+                </div>
               </div>
             </div>
-            <img src={leftImage} className="" alt="lol"></img>
+            <img src={leftImage} className="pr-34  mt-13 md:-mt-0 md:ml-69 md:default" alt="lol"></img>
           </div>
         </div>
-        <div className="flex flex-col border hover:border-gray-200 border-gray-500 md:w-180 h-100 w-90 rounded-2xl pt-5 md:pr-10 pl-10  md:items-end">
-          <h1 className="text-2xl md:text-3xl mb-2 text-[#85ff99] text-sm ">
-            {" "}
-            For
-          </h1>
-          <h1 className="text-3xl md:text-3xl mb-4"> Partners </h1>
-          <button className="w-40 h-20 pl-2  bg-[#85ff99] text-black font-bold border-2 hover:bg-black hover:text-white hover:border-white">
-            {" "}
-            work with us{" "}
-          </button>
+        <div className="flex flex-col border hover:border-gray-200 border-gray-500 md:w-180 h-100 w-100 rounded-2xl pt-5 md:pr-10  ">
+          <div className="flex justify-between items-center">
+            <div className="pl-10 mr-10">
+              <h1 className="text-2xl md:text-3xl mb-2 text-[#85ff99]">
+                {" "}
+                For
+              </h1>
+              <h1 className="text-3xl md:text-3xl mb-4"> Partners </h1>
+            </div>
+            <button className=" text-center md:w-40 md:h-20 ml-10 rounded-lg h-15 w-25 md:mr-0 mr-5 md:rounded-xl md:mb-2 text-[#85ff99] border-green-400 text font-bold border-3 hover:bg-black hover:text-white hover:border-white">
+              {" "}
+              work with us{" "}
+            </button>
+          </div>
+          <img src={rightImage} alt="hi" className="h-65 w-50 mr-40 mt-17"></img>
         </div>
       </div>
     </div>
