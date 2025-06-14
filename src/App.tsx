@@ -1,7 +1,7 @@
 import "./App.css";
 
 import atriumLogo from './assets/atrium.jpeg';
-import atrium2 from './assets/atrium2.jpeg';
+import atrium2 from './assets/atrium2.png';
 
 
 function App() {
@@ -25,7 +25,7 @@ function App() {
       </nav>
 
       <div className="flex justify-center space-x-5 items-center mt-30 ">
-        <img src={atrium2}alt="lol" className="w-40 h-40"></img>
+        <img src={atrium2}alt="lol" className="w-43 h-40"></img>
         <div className="md:text-8xl text-4xl text-[#85ff99] hover:text-green-400">
           Where Developers <br></br>Ship Their Best Work
         </div>
