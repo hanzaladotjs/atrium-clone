@@ -3,13 +3,13 @@ import "./App.css";
 import atriumLogo from "./assets/atrium.jpeg";
 import atrium2 from "./assets/atrium2.png";
 import leftImage from "./assets/atrium3-.png";
-import rightImage from "./assets/atrium4.jpeg";
+import rightImage from "./assets/atrium4.png";
 import dex from "./assets/dex.jpeg";
 import aaron from "./assets/aaron.jpeg"
 
 function App() {
   return (
-    <div>
+    <div className="max-h-screen m-w-screen">
       <nav className="flex  justify-between md:mx-40 mx-4 md:space-x-100 mt-2 items-center">
         <div className="flex items-center space-x-1">
           <img src={atriumLogo} alt="lol" className="h-12 w-12 mt-2 " />
@@ -91,7 +91,7 @@ function App() {
             </div>
             <img
               src={leftImage}
-              className="pr-34  mt-23 md:-mt-0 md:ml-69 md:default"
+              className="w-50 h-43 md:h-64 md:w-55  mt-23 md:-mt-0 md:ml-69 md:default"
               alt="lol"
             ></img>
           </div>
@@ -110,7 +110,7 @@ function App() {
           <img
             src={rightImage}
             alt="hi"
-            className="md:h-60 h-45 mt-22 md:mt-8 w-50 md:ml-0 ml-1/2 md:mr-40 "
+            className="md:h-60 h-50 mt-22 md:mt-8 w-40 md:w-50 md:ml-0 md:mr-40 "
           ></img>
         </div>
       </div>
