@@ -195,7 +195,7 @@ background: linear-gradient(90deg, rgba(42, 155, 134, 1) 0%, rgba(87, 199, 133, 
           </div>
         </div>
       </div>
-      <div className="flex md:flex-row justify-center md:ml-0 ml-10 mb-10 space-y-8  md:space-x-120 flex-col mt-10">
+      <div className="flex md:items-center md:flex-row justify-center md:ml-0 ml-10 mb-10 space-y-8  md:space-x-120 flex-col mt-10">
         <div>
           <ul className="text-2xl text-[#85ff99] mb-2"> Explore</ul>
           <ul>about us</ul>
@@ -213,7 +213,7 @@ background: linear-gradient(90deg, rgba(42, 155, 134, 1) 0%, rgba(87, 199, 133, 
           <ul>weekly-events</ul>
           <ul>blogs</ul>
         </div>
-        <div>
+        <div className="md:mb-26">
           <ul className="text-2xl text-[#85ff99] mb-2"> Legal</ul>
           <ul>terms of service </ul>
           <ul>privacy policy </ul>
