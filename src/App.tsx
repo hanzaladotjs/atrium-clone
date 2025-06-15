@@ -29,7 +29,7 @@ function App() {
       </div>
 
       <div className="flex flex-col md:flex-row mt-10 justify-center space-y-5 md:space-y-0 md:space-x-5 items-center">
-        <div className="flex flex-col border hover:border-gray-200 pt-5 pl-10 border-gray-500 w-100  md:w-180 h-100 rounded-2xl text-start">
+        <div className="flex flex-col border hover:border-gray-200 pt-5 pl-10 border-gray-500 w-90  md:w-180 h-100 rounded-2xl text-start">
           <div className="flex  justify-between items-center" >
             <div>
               <h1 className="text-2xl md:text-3xl mb-2 text-[#85ff99]  ">
@@ -87,12 +87,12 @@ className="hover:bg-green-900"
                 </div>
               </div>
             </div>
-            <img src={leftImage} className="pr-34  mt-13 md:-mt-0 md:ml-69 md:default" alt="lol"></img>
+            <img src={leftImage} className="pr-34  mt-23 md:-mt-0 md:ml-69 md:default" alt="lol"></img>
           </div>
         </div>
-        <div className="flex flex-col border hover:border-gray-200 border-gray-500 md:w-180 h-100 w-100 rounded-2xl pt-5 md:pr-10  ">
+        <div className="flex flex-col border hover:border-gray-200 border-gray-500 md:w-180 h-100 w-90 rounded-2xl pt-5 md:pr-10  ">
           <div className="flex justify-between items-center">
-            <div className="pl-10 mr-10">
+            <div className="pl-10 mr-10 mb-5">
               <h1 className="text-2xl md:text-3xl mb-2 text-[#85ff99]">
                 {" "}
                 For
@@ -104,7 +104,7 @@ className="hover:bg-green-900"
               work with us{" "}
             </button>
           </div>
-          <img src={rightImage} alt="hi" className="h-65 w-50 mr-40 mt-17"></img>
+          <img src={rightImage} alt="hi" className="md:h-60 h-45 mt-22 md:mt-8 w-50 md:ml-0 ml-1/2 md:mr-40 "></img>
         </div>
       </div>
     </div>
