@@ -3,7 +3,9 @@ import "./App.css";
 import atriumLogo from "./assets/atrium.jpeg";
 import atrium2 from "./assets/atrium2.png";
 import leftImage from "./assets/atrium3-.png";
-import rightImage from "./assets/atrium4.jpeg"
+import rightImage from "./assets/atrium4.jpeg";
+import dex from "./assets/dex.jpeg";
+import aaron from "./assets/aaron.jpeg"
 
 function App() {
   return (
@@ -22,15 +24,15 @@ function App() {
       </nav>
 
       <div className="flex justify-center md:space-x-20 items-center mt-30 ">
-        <img src={atrium2} alt="lol" className="w-43 h-40"></img>
-        <div className="md:text-8xl text-4xl text-[#85ff99] hover:text-green-400">
+        <img src={atrium2} alt="lol" className="w-40 h-40"></img>
+        <div className="md:text-8xl text-3xl text-[#85ff99] hover:text-green-400">
           Where Developers <br></br>Ship Their Best Work
         </div>
       </div>
 
       <div className="flex flex-col md:flex-row mt-10 justify-center space-y-5 md:space-y-0 md:space-x-5 items-center">
         <div className="flex flex-col border hover:border-gray-200 pt-5 pl-10 border-gray-500 w-90  md:w-180 h-100 rounded-2xl text-start">
-          <div className="flex  justify-between items-center" >
+          <div className="flex  justify-between items-center">
             <div>
               <h1 className="text-2xl md:text-3xl mb-2 text-[#85ff99]  ">
                 For
@@ -48,13 +50,13 @@ function App() {
               <div className="text-gray-400 pl-1 mb-2 ">Programs:</div>
               <div className="flex space-x-6 mb-2">
                 <h1 className="hover:text-2xl text-xl">🦄️</h1>
-                <div >
+                <div>
                   Uniswap Hook <br></br> Incubator
                 </div>
               </div>
               <div className="flex space-x-6">
                 <svg
-className="hover:bg-green-900"
+                  className="hover:bg-green-900"
                   width="30px"
                   height="30px"
                   viewBox="0 0 24 24"
@@ -87,24 +89,58 @@ className="hover:bg-green-900"
                 </div>
               </div>
             </div>
-            <img src={leftImage} className="pr-34  mt-23 md:-mt-0 md:ml-69 md:default" alt="lol"></img>
+            <img
+              src={leftImage}
+              className="pr-34  mt-23 md:-mt-0 md:ml-69 md:default"
+              alt="lol"
+            ></img>
           </div>
         </div>
         <div className="flex flex-col border hover:border-gray-200 border-gray-500 md:w-180 h-100 w-90 rounded-2xl pt-5 md:pr-10  ">
-          <div className="flex justify-between items-center">
-            <div className="pl-10 mr-10 mb-5">
-              <h1 className="text-2xl md:text-3xl mb-2 text-[#85ff99]">
-                {" "}
-                For
-              </h1>
+          <div className="flex md:space-x-0 md:justify-between space-x-4 items-center">
+            <div className="pl-10  mb-5">
+              <h1 className="text-2xl md:text-3xl mb-2 text-[#85ff99]"> For</h1>
               <h1 className="text-3xl md:text-3xl mb-4"> Partners </h1>
             </div>
-            <button className=" text-center md:w-40 md:h-20 ml-10 rounded-lg h-15 w-25 md:mr-0 mr-5 md:rounded-xl md:mb-2 text-[#85ff99] border-green-400 text font-bold border-3 hover:bg-black hover:text-white hover:border-white">
+            <button className="md:w-38 w-25 md:h-20 ml-10  rounded-lg h-15 mb-8 md:mr-0  md:rounded-xl md:mb-7 text-[#85ff99] border-green-400 text-sm px-3 font-bold border-3 hover:bg-black hover:text-white hover:border-white">
               {" "}
-              work with us{" "}
+              work with us
             </button>
           </div>
-          <img src={rightImage} alt="hi" className="md:h-60 h-45 mt-22 md:mt-8 w-50 md:ml-0 ml-1/2 md:mr-40 "></img>
+          <img
+            src={rightImage}
+            alt="hi"
+            className="md:h-60 h-45 mt-22 md:mt-8 w-50 md:ml-0 ml-1/2 md:mr-40 "
+          ></img>
+        </div>
+      </div>
+
+      <div className="flex items-center mt-10 mx-10 md:mx-50 ">
+        <div className="flex md:flex-row flex-col  space-y-14 md:space-x-90 items-center">
+          <div>
+          <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#85ff99" stroke-width="1.5"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.21255 12.75C9.12943 13.5242 8.9054 14.1421 8.5147 14.6891C7.99181 15.4211 7.11571 16.1036 5.66459 16.8292C5.29411 17.0144 5.14394 17.4649 5.32918 17.8354C5.51442 18.2059 5.96493 18.3561 6.33541 18.1708C7.88429 17.3964 9.00819 16.5789 9.7353 15.5609C10.4761 14.5238 10.75 13.3571 10.75 12V7.5C10.75 6.53351 9.96649 5.75 9 5.75H5C4.03351 5.75 3.25 6.53351 3.25 7.5V11C3.25 11.9665 4.03352 12.75 5 12.75H9.21255Z" fill="#85ff99"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M19.2125 12.75C19.1294 13.5242 18.9054 14.1421 18.5147 14.6891C17.9918 15.4211 17.1157 16.1036 15.6646 16.8292C15.2941 17.0144 15.1439 17.4649 15.3292 17.8354C15.5144 18.2059 15.9649 18.3561 16.3354 18.1708C17.8843 17.3964 19.0082 16.5789 19.7353 15.5609C20.4761 14.5238 20.75 13.3571 20.75 12V7.5C20.75 6.53352 19.9665 5.75 19 5.75H15C14.0335 5.75 13.25 6.53352 13.25 7.5V11C13.25 11.9665 14.0335 12.75 15 12.75H19.2125Z" fill="#85ff99"></path></svg>
+
+            <h1 className="text-xl md:h-20 h-70 mb-3 mt-5 w-60 md:w-100">UHI was an excellent experience. The depth of content, quality of instructors, and level of challenge made it incredibly valuable. It’s a program that truly stands out.</h1>
+            <div className="flex space-x-5 mt-12 md:mt-30">
+              <img src={dex} alt="dex" className="h-10 w-10" />
+              <h2 className="flex flex-col space-y-1">
+                <h2> Dex Chen </h2>
+                <h3> Semantic Layer</h3>
+              </h2>
+            </div>
+          </div>
+          <div>
+          <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#85ff99" stroke-width="1.5"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.21255 12.75C9.12943 13.5242 8.9054 14.1421 8.5147 14.6891C7.99181 15.4211 7.11571 16.1036 5.66459 16.8292C5.29411 17.0144 5.14394 17.4649 5.32918 17.8354C5.51442 18.2059 5.96493 18.3561 6.33541 18.1708C7.88429 17.3964 9.00819 16.5789 9.7353 15.5609C10.4761 14.5238 10.75 13.3571 10.75 12V7.5C10.75 6.53351 9.96649 5.75 9 5.75H5C4.03351 5.75 3.25 6.53351 3.25 7.5V11C3.25 11.9665 4.03352 12.75 5 12.75H9.21255Z" fill="#85ff99"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M19.2125 12.75C19.1294 13.5242 18.9054 14.1421 18.5147 14.6891C17.9918 15.4211 17.1157 16.1036 15.6646 16.8292C15.2941 17.0144 15.1439 17.4649 15.3292 17.8354C15.5144 18.2059 15.9649 18.3561 16.3354 18.1708C17.8843 17.3964 19.0082 16.5789 19.7353 15.5609C20.4761 14.5238 20.75 13.3571 20.75 12V7.5C20.75 6.53352 19.9665 5.75 19 5.75H15C14.0335 5.75 13.25 6.53352 13.25 7.5V11C13.25 11.9665 14.0335 12.75 15 12.75H19.2125Z" fill="#85ff99"></path></svg>
+
+            <h1 className="text-xl md:h-20 h-70 mb-3 mt-5 w-60 md:w-100">Atrium has proven itself as a world-class partner, delivering unparalleled developer education and community-building. The results speak for themselves.</h1>
+            <div className="flex space-x-5 mt-10 md:mt-23">
+              <img src={aaron} alt="aaron" className="h-10 w-10"/>
+              <h2 className="flex flex-col space-y-1">
+                <h2> Aaron Lamphere </h2>
+                <h3> Uniswap Foundation</h3>
+              </h2>
+            </div>
+          </div>
         </div>
       </div>
     </div>
